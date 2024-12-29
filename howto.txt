@@ -1,0 +1,17 @@
+
+
+eslint
+https://eslint.org/docs/latest/use/getting-started
+npm init @eslint/config@latest
+yarn create @eslint/config
+pnpm create @eslint/config@latest
+
+
+https://www.npmjs.com/package/eslint-plugin-react-hooks
+npm i -D eslint-plugin-react-hooks
+{
+    rules: {
+        ...reactHooks.configs.recommended.rules,
+        "react/react-in-jsx-scope": "off",
+    },
+},
