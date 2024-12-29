@@ -1,6 +1,10 @@
 import { HashRouter, Link, Outlet, Route, Routes } from "react-router";
 import { Page1 } from "./Page1";
 import { Page2 } from "./Page2";
+import Icon from "./assets/smiley.png";
+
+
+const smile = "smiely"
 
 const App = () => {
     return (
@@ -45,8 +49,9 @@ function Homepage() {
             <div>
                 This project is a template for a project using React, React Router, Typescript, Webpack, and automated deployment to GitHub Pages.
                 <br></br>
-
             </div>
+
+            <img src={Icon} alt="Smiley face" />
         </div>
     )
 }
