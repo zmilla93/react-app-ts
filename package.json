@@ -12,6 +12,7 @@
     "@babel/preset-react": "^7.26.3",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "@types/webpack-env": "^1.18.5",
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",

@@ -1,7 +1,8 @@
 import { HashRouter, Link, Outlet, Route, Routes } from "react-router";
+import Icon from "./assets/smiley.png";
+import { getImage } from "./ImageLoader";
 import { Page1 } from "./Page1";
 import { Page2 } from "./Page2";
-import Icon from "./assets/smiley.png";
 
 
 const smile = "smiely"
@@ -41,6 +42,7 @@ function Navbar() {
 }
 
 function Homepage() {
+    const img = import("./assets/smiley.png");
     return (
         <div>
             <h1>
@@ -52,6 +54,8 @@ function Homepage() {
             </div>
 
             <img src={Icon} alt="Smiley face" />
+            <img src={getImage("smiley.png")} alt="Smiley face" />
+            <img src={getImage("icons/alert.png")} alt="Smiley face" />
         </div>
     )
 }
