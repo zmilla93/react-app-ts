@@ -9,9 +9,18 @@ pnpm create @eslint/config@latest
 
 https://www.npmjs.com/package/eslint-plugin-react-hooks
 npm i -D eslint-plugin-react-hooks
+{ settings: { react: { version: "detect" } } },
 {
-    rules: {
-        ...reactHooks.configs.recommended.rules,
-        "react/react-in-jsx-scope": "off",
-    },
+plugins: {
+    'react-hooks': reactHooks,
+},
+},
+{
+rules: {
+    ...reactHooks.configs.recommended.rules,
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "semi": "warn",
+},
 },
