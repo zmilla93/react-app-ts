@@ -21,7 +21,3 @@ Thumbs.db
 .env.production
 .env.development.local
 .env.production.local
-
-# Package lock files
-package-lock.json
-yarn.lock
