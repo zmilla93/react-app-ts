@@ -1,4 +1,5 @@
 import { HashRouter, Link, Outlet, Route, Routes } from "react-router";
+import "./App.css";
 import Icon from "./assets/smiley.png";
 import { getImage } from "./ImageLoader";
 import { Page1 } from "./Page1";
@@ -34,7 +35,7 @@ function PageWrapper() {
 }
 function Navbar() {
     return (<div>
-        <Link to="/">Home</Link>
+        <Link to="/" className="">Home</Link>
         <Link to="page1">Page 1</Link>
         <Link to="page2">Page 2</Link>
         <Link to="page3">Page 3</Link>
@@ -44,15 +45,24 @@ function Navbar() {
 function Homepage() {
     const img = import("./assets/smiley.png");
     return (
-        <div>
+        <div className=" bg-green-400">
             <h1>
                 Hello World!
             </h1>
             <div>
-                This project is a template for a project using React, React Router, Typescript, Webpack, and automated deployment to GitHub Pages.
+                This is a template project for the following tech stack:
+                <ul>
+                    <li>- Webpack 5</li>
+                    <li>- React</li>
+                    <li>- React Router</li>
+                    <li>- Typescript</li>
+                    <li>- Tailwind CSS</li>
+                    <li>- Deplayed to GitHub Pages</li>
+                    <li>- Deployed with GitHub Actions</li>
+                </ul>
                 <br></br>
             </div>
-
+            <h1>Dynamic Image Test</h1>
             <img src={Icon} alt="Smiley face" />
             <img src={getImage("smiley.png")} alt="Smiley face" />
             <img src={getImage("icons/alert.png")} alt="Smiley face" />
