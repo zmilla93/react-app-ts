@@ -11,12 +11,26 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 const config = {
     entry: './index.tsx',
     output: {
+        publicPath: '/',
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        open: true,
+        open: false,
         host: 'localhost',
+        liveReload: true,
+        historyApiFallback: true,
     },
+    // devServer: {
+    //     open: false,
+    //     host: 'localhost',
+    //     port: 8000,
+    //     liveReload: true,
+    //     // historyApiFallback: true,
+    //     client: {
+    //         logging: 'none',
+    //         progress: false,
+    //     },
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',

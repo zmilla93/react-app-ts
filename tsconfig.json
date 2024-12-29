@@ -10,5 +10,8 @@
   },
   "files": [
     "index.tsx"
-  ]
+  ],
+  "include": [
+    "src"
+  ],
 }
