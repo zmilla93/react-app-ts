@@ -3,15 +3,21 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "module": "CommonJS",
-    "target": "ES6",
+    "module": "ESNext",
+    "target": "ES2020",
     "allowJs": true,
     "jsx": "react-jsx",
+    /* Linting */
+    // "strict": false,
+    // "noUnusedLocals": false,
+    // "noUnusedParameters": false,
+    // "noFallthroughCasesInSwitch": true,
+    // "noUncheckedSideEffectImports": true
   },
-  "files": [
-    "index.tsx"
-  ],
+  // Include individual files here
+  "files": null,
   "include": [
+    // Includes directories here
     "src"
   ],
 }
