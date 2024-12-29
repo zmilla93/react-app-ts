@@ -1,14 +1,14 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router"
+import { HashRouter, Link, Route, Routes } from "react-router"
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="page1" element={<div>P1</div>} />
                 <Route path="page2" element={<div>P2</div>} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
     )
 }
