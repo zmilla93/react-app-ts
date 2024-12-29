@@ -18,6 +18,10 @@ const config = {
         host: 'localhost',
         port: 8000,
         liveReload: true,
+        client: {
+            logging: 'none',
+            progress: false,
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
